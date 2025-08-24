@@ -3,80 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADV Antivirus | Services</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+  <title>ADV Antivirus - Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fbff;
+      color: #333;
+    }
+
+    /* Navbar */
+    <nav>
+  <div style="color:#00c3ff; font-size: 1.5rem; font-weight: bold;">ADV Antivirus</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+    nav {
+      background: #0d1b2a;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00c3ff;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .services h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      max-width: 350px;
+      text-align: left;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .card h2 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    /* Pricing Section */
+    .pricing {
+      background: #eaf4ff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .pricing h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .plan {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      max-width: 300px;
+      transition: transform 0.3s;
+    }
+    .plan:hover {
+      transform: scale(1.05);
+    }
+    .plan h2 {
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    .plan p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .plan .price {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #0d1b2a;
+    }
+    .plan button {
+      background: linear-gradient(45deg, #00c3ff, #007bff);
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .plan button:hover {
+      background: linear-gradient(45deg, #007bff, #00c3ff);
+    }
+
+    /* Footer */
+    footer {
+      background: #0d1b2a;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>ADV Antivirus</h1>
-    <nav>
+
+  <!-- Navbar -->
+  <nav>
+    <div style="color:#00c3ff; font-size: 1.5rem; font-weight: bold;">ADV Antivirus</div>
+    <div>
       <a href="index.html">Home</a>
-      <a href="services.html" class="active">Services</a>
+      <a href="services.html">Services</a>
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact</a>
-      <a heef="style.css"> </a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <section class="content">
-    <h2>Our Services</h2>
-    <div class="card-container">
-
+  <!-- Services Section -->
+  <section class="services">
+    <h1>Our Services</h1>
+    <div class="service-cards">
       <div class="card">
-        <i class="fas fa-shield-virus fa-2x"></i>
-        <h3>Real-Time Antivirus</h3>
-        <p>Powerful protection against malware, spyware, ransomware, and phishing attempts. Stay safe every second you’re online.</p>
+        <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Security">
+        <h2>Data Security</h2>
+        <p>Protect sensitive data with our encryption and firewall technologies. We ensure your personal and business information stays secure against breaches, ransomware, and unauthorized access.</p>
       </div>
-
       <div class="card">
-        <i class="fas fa-database fa-2x"></i>
-        <h3>Data Security & Encryption</h3>
-        <p>Advanced encryption tools to secure sensitive information, files, and communications across all your devices.</p>
+        <img src="https://images.unsplash.com/photo-1624987601099-1ad788b771cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ethical Hacking">
+        <h2>Ethical Hacking Defense</h2>
+        <p>Our team simulates real-world attacks to identify vulnerabilities in your system. By using ethical hacking methods, we proactively strengthen your defenses against cyber criminals.</p>
       </div>
-
       <div class="card">
-        <i class="fas fa-fire fa-2x"></i>
-        <h3>Firewall Protection</h3>
-        <p>Prevent unauthorized access to your system with our smart firewall that adapts to your browsing and app usage.</p>
+        <img src="https://images.unsplash.com/photo-1641317071164-1d4e82a5af9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Antivirus">
+        <h2>Powerful Antivirus</h2>
+        <p>Our AI-powered antivirus solution detects, blocks, and eliminates threats in real-time. Stay protected from viruses, malware, spyware, and phishing across all your devices.</p>
       </div>
-
-      <div class="card">
-        <i class="fas fa-headset fa-2x"></i>
-        <h3>24/7 Monitoring & Support</h3>
-        <p>Round-the-clock system scanning, plus priority technical support to solve security issues instantly.</p>
-      </div>
-
-      <div class="card">
-        <i class="fas fa-mobile-alt fa-2x"></i>
-        <h3>Mobile Security</h3>
-        <p>Protect your Android and iOS devices with app scanning, safe browsing, and anti-theft features for lost devices.</p>
-      </div>
-
-      <div class="card">
-        <i class="fas fa-cloud fa-2x"></i>
-        <h3>Cloud Backup & Protection</h3>
-        <p>Automatic backup of your important data to secure cloud storage, ensuring recovery in case of system failure.</p>
-      </div>
-
-      <div class="card">
-        <i class="fas fa-user-lock fa-2x"></i>
-        <h3>Identity Theft Protection</h3>
-        <p>Monitor and safeguard your personal data, passwords, and financial information against online fraud.</p>
-      </div>
-
-      <div class="card">
-        <i class="fas fa-globe fa-2x"></i>
-        <h3>Web & Email Security</h3>
-        <p>Block malicious websites, spam, and unsafe downloads to ensure a safe browsing and email experience.</p>
-      </div>
-
     </div>
   </section>
 
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <h1>Plans & Pricing</h1>
+    <div class="plans">
+      <div class="plan">
+        <h2>Basic</h2>
+        <p>Essential protection for individuals</p>
+        <div class="price">₹499 / month</div>
+        <button>Choose Plan</button>
+      </div>
+      <div class="plan">
+        <h2>Standard</h2>
+        <p>Advanced protection for families</p>
+        <div class="price">₹999 / month</div>
+        <button>Choose Plan</button>
+      </div>
+      <div class="plan">
+        <h2>Premium</h2>
+        <p>Full suite protection for businesses</p>
+        <div class="price">₹1999 / month</div>
+        <button>Choose Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 ADV Antivirus. All Rights Reserved.</p>
+    <p>© 2025 ADV Antivirus. All rights reserved.</p>
   </footer>
+
 </body>
-</html>
+    </html>
+
