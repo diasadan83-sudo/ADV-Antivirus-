@@ -6,100 +6,72 @@
   <title>Services - ADV Antivirus</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f5f8fc;
+      font-family: Arial, sans-serif;
+      background: #f4f9ff;
+      color: #333;
     }
     header {
-      background: #0a1f44;
-      color: white;
-      padding: 15px 30px;
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-    header nav a {
       color: white;
-      margin-left: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
       text-decoration: none;
       font-weight: bold;
     }
-    header nav a:hover {
-      color: #00c3ff;
+    nav a:hover {
+      text-decoration: underline;
     }
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                  url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1600') center/cover no-repeat;
-      color: white;
+    section {
+      padding: 3rem;
       text-align: center;
-      padding: 80px 20px;
     }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    section h2 {
+      color: #0072ff;
     }
-    .hero p {
-      font-size: 1.2rem;
-    }
-    .services {
-      padding: 60px 20px;
+    .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      max-width: 1200px;
-      margin: auto;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
     .card {
       background: white;
-      border-radius: 15px;
-      padding: 25px;
-      text-align: center;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
     .card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-5px);
     }
     .card img {
-      width: 80px;
-      margin-bottom: 20px;
-    }
-    .card h3 {
-      margin-bottom: 15px;
-      color: #0a1f44;
-    }
-    .card p {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 20px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #00c3ff;
-      color: white;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #008ecc;
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
     }
     footer {
-      background: #0a1f44;
-      color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 1rem;
+      background: #0072ff;
+      color: white;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <div style="font-size: 1.5rem; font-weight: bold;">ADV Antivirus</div>
+    <h1>ADV Antivirus</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -108,64 +80,52 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Our Services</h1>
-    <p>Protecting your digital world with advanced cybersecurity solutions</p>
+  <section>
+    <h2>Our Services</h2>
+    <p>Explore the advanced cybersecurity services we provide at ADV Antivirus.</p>
+
+    <div class="services-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8d1?w=400" alt="Data Security">
+        <h3>Data Security</h3>
+        <p>Protect sensitive information with state-of-the-art encryption and monitoring to keep your data safe from intruders.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=400" alt="Ethical Hacking">
+        <h3>Ethical Hacking</h3>
+        <p>We simulate real-world cyberattacks to identify system vulnerabilities and help you patch them before hackers exploit them.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1621839673705-6612d3d7b840?w=400" alt="Firewall Protection">
+        <h3>Firewall Protection</h3>
+        <p>Advanced firewalls that block unauthorized access, ensuring your networks and systems remain secure at all times.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1614064647768-5a2c9c5b07df?w=400" alt="Antivirus Solutions">
+        <h3>Antivirus Solutions</h3>
+        <p>AI-driven antivirus that detects and removes threats instantly across all your devices, providing real-time protection.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=400" alt="Cloud Security">
+        <h3>Cloud Security</h3>
+        <p>Protect your cloud infrastructure with cutting-edge tools that safeguard your apps, databases, and sensitive workloads.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556742400-b5b7c5121f4d?w=400" alt="Cybersecurity Training">
+        <h3>Cybersecurity Training</h3>
+        <p>Empower your teams with awareness and training programs to help them identify, avoid, and report cyber threats effectively.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Services Grid -->
-  <section class="services">
-
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/lock--v1.png" alt="Data Security">
-      <h3>Advanced Data Security</h3>
-      <p>End-to-end encryption, secure file transfers, and real-time monitoring to keep your data safe.</p>
-      <a href="data-security.html" class="btn">Read More</a>
-    </div>
-
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/hacker.png" alt="Ethical Hacking">
-      <h3>Ethical Hacking Defense</h3>
-      <p>Simulated penetration testing and proactive defense strategies to block cyberattacks before they happen.</p>
-      <a href="ethical-hacking.html" class="btn">Read More</a>
-    </div>
-
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/antivirus.png" alt="Antivirus">
-      <h3>AI-Powered Antivirus</h3>
-      <p>Smart detection and instant removal of malware, ransomware, and zero-day threats.</p>
-      <a href="antivirus.html" class="btn">Read More</a>
-    </div>
-
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/cloud-security.png" alt="Cloud Security">
-      <h3>Cloud Security</h3>
-      <p>Secure cloud storage, monitoring, and backup solutions for businesses and individuals.</p>
-      <a href="cloud-security.html" class="btn">Read More</a>
-    </div>
-
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/firewall.png" alt="Firewall">
-      <h3>Next-Gen Firewalls</h3>
-      <p>Protect your network with intelligent firewalls designed to stop intrusions in real time.</p>
-      <a href="firewall.html" class="btn">Read More</a>
-    </div>
-
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/privacy.png" alt="Privacy">
-      <h3>Privacy Protection</h3>
-      <p>Advanced VPN, anonymous browsing, and data masking to safeguard your identity online.</p>
-      <a href="privacy.html" class="btn">Read More</a>
-    </div>
-
-  </section>
-
-  <!-- Footer -->
   <footer>
     <p>© 2025 ADV Antivirus. All rights reserved.</p>
   </footer>
-
 </body>
-        </html>       
-
+</html>
+    
