@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - ADV Antivirus</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -45,18 +47,26 @@
     }
     .service {
       background: white;
-      padding: 1.5rem;
+      padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
       transition: transform 0.2s;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
     }
     .service:hover {
       transform: translateY(-5px);
     }
+    .service i {
+      font-size: 2rem;
+      color: #0072ff;
+      margin-top: 0.2rem;
+    }
     .service h3 {
       color: #00c6ff;
-      margin-top: 0;
+      margin: 0 0 0.5rem 0;
     }
     footer {
       text-align: center;
@@ -82,33 +92,51 @@
     <h2>Our Services</h2>
 
     <div class="service">
-      <h3>Data Security</h3>
-      <p>We provide enterprise-grade data protection solutions that safeguard sensitive files, databases, and user information. Our tools use encryption, access control, and real-time monitoring to ensure your data remains secure at all times.</p>
+      <i class="fas fa-lock"></i>
+      <div>
+        <h3>Data Security</h3>
+        <p>We safeguard sensitive files, databases, and user information with enterprise-grade encryption and real-time monitoring.</p>
+      </div>
     </div>
 
     <div class="service">
-      <h3>Ethical Hacking</h3>
-      <p>Our team of certified ethical hackers performs penetration testing and vulnerability assessments to identify weaknesses in your systems before real hackers exploit them. We deliver detailed reports and solutions to strengthen your defenses.</p>
+      <i class="fas fa-user-secret"></i>
+      <div>
+        <h3>Ethical Hacking</h3>
+        <p>Certified experts perform penetration testing and vulnerability assessments to identify and fix security loopholes.</p>
+      </div>
     </div>
 
     <div class="service">
-      <h3>Firewall Protection</h3>
-      <p>Our advanced firewall systems act as the first line of defense against cyberattacks. We configure and monitor your firewalls to prevent unauthorized access, block malicious traffic, and secure your networks effectively.</p>
+      <i class="fas fa-shield-alt"></i>
+      <div>
+        <h3>Firewall Protection</h3>
+        <p>Advanced firewalls act as your first line of defense, blocking malicious traffic and preventing unauthorized access.</p>
+      </div>
     </div>
 
     <div class="service">
-      <h3>Antivirus Solutions</h3>
-      <p>Protect your devices with our AI-driven antivirus that detects, quarantines, and removes threats in real time. Our antivirus is lightweight, constantly updated, and provides protection against viruses, malware, and ransomware.</p>
+      <i class="fas fa-virus-slash"></i>
+      <div>
+        <h3>Antivirus Solutions</h3>
+        <p>AI-powered antivirus protection against viruses, malware, spyware, and ransomware — lightweight and real-time.</p>
+      </div>
     </div>
 
     <div class="service">
-      <h3>Cloud Security</h3>
-      <p>We secure cloud environments with tools that monitor, encrypt, and protect your applications and workloads. From cloud storage to virtual servers, our solutions prevent data leaks and ensure compliance with security standards.</p>
+      <i class="fas fa-cloud"></i>
+      <div>
+        <h3>Cloud Security</h3>
+        <p>Complete cloud protection for storage, apps, and workloads with monitoring, encryption, and compliance assurance.</p>
+      </div>
     </div>
 
     <div class="service">
-      <h3>Cybersecurity Training</h3>
-      <p>We empower employees and IT teams with training sessions focused on cyber awareness. Our programs cover phishing detection, password security, safe browsing, and reporting suspicious activity, helping to reduce risks caused by human error.</p>
+      <i class="fas fa-chalkboard-teacher"></i>
+      <div>
+        <h3>Cybersecurity Training</h3>
+        <p>We train employees and IT teams to recognize phishing attempts, secure passwords, and follow safe digital practices.</p>
+      </div>
     </div>
   </section>
 
@@ -117,6 +145,6 @@
   </footer>
 </body>
 </html>
-      
+
+
     
-      
