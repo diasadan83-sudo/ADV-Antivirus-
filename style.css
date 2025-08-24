@@ -159,4 +159,14 @@ footer {
   border: 2px solid #ff5733;
   transform: scale(1.05);
 }
+.card i {
+  margin-bottom: 15px;
+  color: #ffdf00;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+}
 
