@@ -8,8 +8,9 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f9ff;
+      background: #f9fbfd;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background: linear-gradient(135deg, #0072ff, #00c6ff);
@@ -33,32 +34,29 @@
       text-decoration: underline;
     }
     section {
-      padding: 3rem;
-      text-align: center;
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
     section h2 {
       color: #0072ff;
+      text-align: center;
+      margin-bottom: 2rem;
     }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .card {
+    .service {
       background: white;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
       transition: transform 0.2s;
     }
-    .card:hover {
+    .service:hover {
       transform: translateY(-5px);
     }
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 1rem;
+    .service h3 {
+      color: #00c6ff;
+      margin-top: 0;
     }
     footer {
       text-align: center;
@@ -82,44 +80,35 @@
 
   <section>
     <h2>Our Services</h2>
-    <p>Explore the advanced cybersecurity services we provide at ADV Antivirus.</p>
 
-    <div class="services-grid">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8d1?w=400" alt="Data Security">
-        <h3>Data Security</h3>
-        <p>Protect sensitive information with state-of-the-art encryption and monitoring to keep your data safe from intruders.</p>
-      </div>
+    <div class="service">
+      <h3>Data Security</h3>
+      <p>We provide enterprise-grade data protection solutions that safeguard sensitive files, databases, and user information. Our tools use encryption, access control, and real-time monitoring to ensure your data remains secure at all times.</p>
+    </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=400" alt="Ethical Hacking">
-        <h3>Ethical Hacking</h3>
-        <p>We simulate real-world cyberattacks to identify system vulnerabilities and help you patch them before hackers exploit them.</p>
-      </div>
+    <div class="service">
+      <h3>Ethical Hacking</h3>
+      <p>Our team of certified ethical hackers performs penetration testing and vulnerability assessments to identify weaknesses in your systems before real hackers exploit them. We deliver detailed reports and solutions to strengthen your defenses.</p>
+    </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1621839673705-6612d3d7b840?w=400" alt="Firewall Protection">
-        <h3>Firewall Protection</h3>
-        <p>Advanced firewalls that block unauthorized access, ensuring your networks and systems remain secure at all times.</p>
-      </div>
+    <div class="service">
+      <h3>Firewall Protection</h3>
+      <p>Our advanced firewall systems act as the first line of defense against cyberattacks. We configure and monitor your firewalls to prevent unauthorized access, block malicious traffic, and secure your networks effectively.</p>
+    </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1614064647768-5a2c9c5b07df?w=400" alt="Antivirus Solutions">
-        <h3>Antivirus Solutions</h3>
-        <p>AI-driven antivirus that detects and removes threats instantly across all your devices, providing real-time protection.</p>
-      </div>
+    <div class="service">
+      <h3>Antivirus Solutions</h3>
+      <p>Protect your devices with our AI-driven antivirus that detects, quarantines, and removes threats in real time. Our antivirus is lightweight, constantly updated, and provides protection against viruses, malware, and ransomware.</p>
+    </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=400" alt="Cloud Security">
-        <h3>Cloud Security</h3>
-        <p>Protect your cloud infrastructure with cutting-edge tools that safeguard your apps, databases, and sensitive workloads.</p>
-      </div>
+    <div class="service">
+      <h3>Cloud Security</h3>
+      <p>We secure cloud environments with tools that monitor, encrypt, and protect your applications and workloads. From cloud storage to virtual servers, our solutions prevent data leaks and ensure compliance with security standards.</p>
+    </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1556742400-b5b7c5121f4d?w=400" alt="Cybersecurity Training">
-        <h3>Cybersecurity Training</h3>
-        <p>Empower your teams with awareness and training programs to help them identify, avoid, and report cyber threats effectively.</p>
-      </div>
+    <div class="service">
+      <h3>Cybersecurity Training</h3>
+      <p>We empower employees and IT teams with training sessions focused on cyber awareness. Our programs cover phishing detection, password security, safe browsing, and reporting suspicious activity, helping to reduce risks caused by human error.</p>
     </div>
   </section>
 
@@ -128,4 +117,6 @@
   </footer>
 </body>
 </html>
+      
     
+      
